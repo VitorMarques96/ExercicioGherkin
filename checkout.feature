@@ -8,12 +8,12 @@ Funcionalidade: Tela de cadastro - Check out
 Contexto: Dado que estou na página de finalizar compra 
 
 Cenário: Deve ser cadastrado com todos os dados obrigatórios, marcado com asteriscos 
-    Quando eu preencher os campos obrigatórios com os dados de <nome>, <país>, <endereço>, <cidade>, <cep>, <telefone> e <endereço de email>
+    Quando eu preencher os campos obrigatórios com os dados de <nome>, <país>, <endereço>, <cidade>, <cep>, <telefone> e <email>
     E clicar no botão de finalizar compra
     Então o sistema deve finalizar a compra 
 
 Exemplos:
-    |  nome  | país     | endereço | cidade    | cep   | telefone    | endereço de email       | resultado |
+    |  nome  | país     | endereço | cidade    | cep   | telefone    | email                   | resultado |
     | "Joao" | "Brasil" | "Rua 5"  | "Goiânia" | "XXX" | "XXXX-XXXX" | "emailvalido@gmail.com" | Válido    |
 
 
@@ -22,7 +22,7 @@ Cenário: Não deve permitir campo e-mail com formato inválido. Sistema deve in
     Deve ser exibida uma mensagem de email inválido
 
 Exemplos:
-    | endereço de email        | Resultado |
+    | email                    | Resultado |
     | emailinvalido@email.com  | Inválido  |
     | emailinvalido2@email.com | Inválido  |
     | emailinvalido3@email.com | Inválido  |
